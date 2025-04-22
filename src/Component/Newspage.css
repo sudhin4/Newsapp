@@ -1,0 +1,105 @@
+*{
+    color: white;
+    background-color: black;
+}
+
+.Image_sec_img{
+    width: 500px;
+    border-radius: 10px;
+}
+.heading_{
+    width: 500px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 600;
+    font-size: 30px;
+}
+.description_div{
+    width: 500px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 300;
+    font-size: 15px;
+}
+.date_for_thenews{
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 200;
+    font-size: 15px;
+    color: white;
+}
+.url_link_to{
+    width: 400px;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 15px;
+    color: white;
+    text-decoration: none;
+    
+}
+.date_author{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    position: relative;
+    
+    z-index: 11;
+    color: white;
+}
+.url_link_to:hover{
+    text-decoration: underline;
+}
+.Newspage_component{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+    border: 1px solid white;
+    padding: 20px;
+    border-radius: 10px;
+    width: max-content;
+    position: relative;
+    left: 100px;
+    margin: 30px;
+    
+}
+.link_div{
+    width: 300px;
+}
+.buttons_category{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: center;
+    margin: 20px;
+    
+}
+.button___{
+    border: none;
+    outline: none;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 100;
+    font-size: 20px;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.2s;
+    
+}
+.button___:hover{
+    transform: scale(1.06);
+    cursor: pointer;
+    
+}
+
+.catchy_caption{
+    width: 800px;
+    font-family:'Times New Roman', Times, serif;
+    font-weight: 600;
+    font-size: 30px;
+    justify-content: center;
+    align-items: center;
+
+}
+.caption_cal{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
