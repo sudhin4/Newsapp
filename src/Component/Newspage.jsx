@@ -1,12 +1,16 @@
 import { useEffect, useState } from "react";
 import "../Component/Newspage.css";
+import defaultimage from '../Component/NoImage.jpg'
 
-function Newspage({ img, content, title, url, publisheddate, author }) {
+function Newspage({ img, content, title, url, publisheddate, author,category }) {
+
+  const displayimage = img || defaultimage
+
   return (
     <>
       <div className="Newspage_component">
         <div className="image_section">
-          <img src={img} alt="Image" className="Image_sec_img" />
+          <img src={displayimage} alt="Image" className="Image_sec_img" />
         </div>
         <div className="content_div">
           <div className="heading_div_news">
@@ -23,6 +27,7 @@ function Newspage({ img, content, title, url, publisheddate, author }) {
           <div className="date_author">
             <p className="date_for_thenews">{publisheddate}</p>
             <p className="author_para">{author}</p>
+            <p className="autor_para">{category}</p>
           </div>
         </div>
       </div>
