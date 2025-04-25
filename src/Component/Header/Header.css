@@ -1,0 +1,64 @@
+.Logo_name{
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 30px;
+    margin: 20px;
+    position: relative;
+    left: 10px;
+}
+.download_btn{
+    width: 130px;
+    height: 40px;
+    font-family: 'Inter';
+    font-weight: 600;
+    font-size: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.651);
+    border-radius: 5px;
+    outline: none;
+    cursor: pointer;
+    display: flex;
+    gap: 1px;
+    align-items: center;
+    transition: transform 0.3s;
+    display: none;
+}
+.download_btn:hover{
+    transform: scale(1.03);
+}
+.content{
+    display: flex;
+    flex-direction: row;
+    gap: 70%;
+    align-items: center;
+}
+.download_icon{
+    font-size: 20px;
+}
+@media only screen and (max-width:453px){
+    .download_btn{
+        display: block;
+        align-items: center;
+        font-family: 'Inter';
+        font-size: 13px;
+        width: 100px;
+        position: relative;
+        left: 25px;
+        
+
+    }
+    .download_icon{
+        font-size: 17px;
+        position: relative;
+        top: 5px;
+    }
+    .Logo_name{
+        font-family:'Courier New', Courier, monospace;
+        font-size: 30px;
+        position: relative;
+        font-weight: 500;
+        left: -5px;
+    }
+    .content{
+        gap: 10px;
+    }
+}

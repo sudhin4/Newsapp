@@ -1,3 +1,4 @@
+import MobilePageTopic from "./MobilePageTopic";
 import Newspage from "./Newspage";
 import { useState, useEffect } from "react";
 
@@ -34,6 +35,15 @@ function Mappingnews() {
     getnews();
   }, [topic]);
 
+  const date = new Date();
+  const formatdate = date.toLocaleDateString();
+
+  function updatesettopic(value){
+    settopic(value)
+  }
+
+
+
   return (
     <>
       <div className="buttons_category">
@@ -68,15 +78,20 @@ function Mappingnews() {
           World
         </button>
       </div>
-      <div className="caption_cal">
-        <h3 className="catchy_caption">
-          "Bringing you trusted stories and breaking headlines — timely,
-          relevant, and made for minds that stay curious."
-        </h3>
+      <div className="Mobile_topic_section_only_mobile">
+        <MobilePageTopic gettopicfrommobile={updatesettopic}/>
       </div>
+      {/* <div className="caption_cal">
+        <h3 className="catchy_caption">
+          Today News
+        </h3>
+        <h2 className="today_date">{formatdate}</h2>
 
-      {news.map((item, index) => (
-        <div key={index}>
+      </div> */}
+
+      <div className="full_mapping_div">
+        {news.map((item, index) => (
+        <div key={index} className="mapping-div_for-news">
           <Newspage
             author={item.source_name}
             content={item.description}
@@ -88,6 +103,8 @@ function Mappingnews() {
           />
         </div>
       ))}
+      </div>
+      
     </>
   );
 }
