@@ -1,7 +1,7 @@
 import Mappingnews from "./Component/Mappingnews";
 import Newspage from "./Component/Newspage";
 import Header from "./Component/Header/Header";
-import { useState } from "react";
+import { useState,useEffect } from "react";
 function App() {
   const [deferredPrompt, setDeferredPrompt] = useState(null);
   const [showInstallBtn, setShowInstallBtn] = useState(false);
