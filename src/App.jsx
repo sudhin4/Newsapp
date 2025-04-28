@@ -28,14 +28,9 @@ function App() {
   };
   return (
     <>
-      <Header installfun={handleInstallClick} />
+      <Header installfun={handleInstallClick} showbtn={showInstallBtn} />
       <Mappingnews />
-      {/* <div>
-        <h1>App</h1>
-        {showInstallBtn && (
-          <button onClick={handleInstallClick}>Install App</button>
-        )}
-      </div> */}
+      
     </>
   );
 }
