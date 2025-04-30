@@ -1,7 +1,7 @@
 import topNews from "../MobileFrontpage/TopNews.png";
 import Sports from "../MobileFrontpage/Sports News Logo.png";
 import Technology from "../MobileFrontpage/Technology News Logo.png";
-import business from "../MobileFrontpage/business Logo.png";
+import business from "../MobileFrontpage/Business Logo.png";
 import World from "../MobileFrontpage/World News Logo.png";
 import { useNavigate } from "react-router-dom";
 
@@ -9,7 +9,7 @@ import { useNavigate } from "react-router-dom";
 import "../MobileFrontpage/MobileFront.css";
 import { useState } from "react";
 
-function Mobilefront({gettopicfunction}) {
+function Mobilefront({}) {
 
     const navigate = useNavigate();
 
