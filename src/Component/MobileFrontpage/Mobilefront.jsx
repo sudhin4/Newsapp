@@ -1,7 +1,7 @@
 import topNews from "../MobileFrontpage/TopNews.png";
 import Sports from "../MobileFrontpage/Sports News Logo.png";
 import Technology from "../MobileFrontpage/Technology News Logo.png";
-import business from "../MobileFrontpage/Business Logo.png";
+import business from '../MobileFrontpage/Business Logo.png';
 import World from "../MobileFrontpage/World News Logo.png";
 import { useNavigate } from "react-router-dom";
 
