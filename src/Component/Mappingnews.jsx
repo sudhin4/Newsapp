@@ -1,12 +1,15 @@
-import MobilePageTopic from "./MobilePageTopic";
 import Newspage from "./Newspage";
 import { useState, useEffect } from "react";
 
 function Mappingnews() {
+
+ 
   const [news, setnews] = useState([]);
   const [active, isactive] = useState(null);
+  const [loading ,setloading] = useState(false)
 
   const [topic, settopic] = useState("top");
+
 
   useEffect(() => {
     if (active == "btn1") {
@@ -25,10 +28,21 @@ function Mappingnews() {
   }, []);
 
   async function getnews() {
-    const url = `https://newsdata.io/api/1/latest?country=in&language=en&category=${topic}&apikey=pub_82191d6c05e2a0bd825ff719316a2836c96ef`;
+
+    try{
+      setloading(true)
+      const url = `https://newsdata.io/api/1/latest?country=in&language=en&category=${topic}&apikey=pub_82191d6c05e2a0bd825ff719316a2836c96ef`;
     const responise = await fetch(url);
     const data = await responise.json();
     setnews(data.results);
+    }
+    catch (error){
+      null
+    }
+    finally{
+      setloading(false)
+    }
+    
   }
 
   useEffect(() => {
@@ -40,6 +54,14 @@ function Mappingnews() {
 
   function updatesettopic(value){
     settopic(value)
+  }
+
+  if (loading) {
+    return (
+      <div className="loading_div__">
+        <h2 className="LoadingFunctiondesk">Loading....</h2>
+      </div>
+    );
   }
 
 
@@ -78,18 +100,9 @@ function Mappingnews() {
           World
         </button>
       </div>
-      <div className="Mobile_topic_section_only_mobile">
-        <MobilePageTopic gettopicfrommobile={updatesettopic}/>
-      </div>
-      {/* <div className="caption_cal">
-        <h3 className="catchy_caption">
-          Today News
-        </h3>
-        <h2 className="today_date">{formatdate}</h2>
+     
 
-      </div> */}
-
-      <div className="full_mapping_div">
+      <div className="full_mapping_div" data-aos="fade-right">
         {news.map((item, index) => (
         <div key={index} className="mapping-div_for-news">
           <Newspage

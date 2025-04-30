@@ -1,0 +1,70 @@
+.Image__Frontmobile {
+    width: 100px;
+    height: 100px;
+    user-select: none;
+}
+
+.content_top {
+    display: flex;
+    align-items: center;
+    height: 80px;
+    border-radius: 10px;
+    padding: 5px;
+    width: 90%;
+    justify-content: space-around;
+    background-image: linear-gradient(-225deg, #22E1FF 0%, #1D8FE1 48%, #625EB1 100%);
+    color: white;
+    cursor: pointer;
+
+}
+
+.card_mobilefrontpage {
+    display: flex;
+    justify-content: center;
+    margin: 15px;
+}
+
+.heading {
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 20px;
+    user-select: none;
+    color: white;
+}
+
+.TOPnEWS {
+    width: 80px;
+    height: 80px;
+}
+
+.BUsINESS {
+    width: 90px;
+    height: 90px;
+    position: relative;
+    right: 12px;
+}
+
+.SpORTS{
+    width: 90px;
+    height: 90px;
+    position: relative;
+    right: 15px;
+}
+.WOrLd{
+    position: relative;
+    right: 15px;
+}
+.developer_tagee{
+    font-size:15px;
+    font-family: 'Inter';
+    text-decoration: none;
+    color: rgba(0, 0, 255, 0.728);
+    font-weight: 400;
+}
+.tageer_developer{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    right: 10px;
+    top: 90px;
+}

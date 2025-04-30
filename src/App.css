@@ -1,0 +1,12 @@
+.MobileFront_pagediv{
+    display: none;
+}
+
+@media only screen and (max-width:453px){
+    .desktop_pagediv{
+        display: none;
+    }
+    .MobileFront_pagediv{
+        display: block;
+    }
+}
